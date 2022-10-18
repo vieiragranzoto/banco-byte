@@ -36,42 +36,35 @@ ContaUtil.java para reutilização de código.
 
 ### Classes & Interfaces
 
-Classe que é utilizada na criação de contas Corrente e Poupança:
-
+Classe que é utilizada na criação de contas Corrente e Poupança
 ```Cliente.java```
 
 Interface deve ser implementada por diferentes tipos de Conta
 criados no banco:
-
 ```Conta.java```
 
 Classe que implementa interface Conta, reutiliza código da
 ContaUtil, e tem alteração no metodo transfere:
-
 ```ContaCorrente.java```
 
 Classe que implementa interface Conta, reutiliza código da
 ContaUtil, e não possui alterações:
-
 ```ContaPoupanca.java```
 
 Classe contendo o código que pode ser reutilizado para diferentes
 tipos de Conta no banco:
-
 ```ContaUtil.java```
 
 Classe de exceção unchecked utilizada para valores incorretos:
-
 ```ValorIncorretoException.java```
 
 ## Test
 
-O pacote teste é onde classes de teste devem ser criadas.
+O pacote teste é onde classes de teste devem ser criados.
 
 ### Criar Conta
 
 Classe criada para testar metodo transfere da classe ContaCorrente:
-
 ```TesteTransfereCC.java```
 
 
