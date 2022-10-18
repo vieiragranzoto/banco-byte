@@ -7,7 +7,7 @@ ensinado na formação Java e Orientação a Objetos da Alura.
 
 - [Projeto](#projeto)
   + [Packages](#packages)
-- [Model] (#model)
+- [Model](#model)
   + [Classes & Interfaces](#classes--interfaces)
 - [Test](#test)
   + [Criar Conta](#criar-conta)
