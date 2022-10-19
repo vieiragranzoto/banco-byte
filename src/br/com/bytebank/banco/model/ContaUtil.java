@@ -59,4 +59,9 @@ public class ContaUtil {
    public Cliente getTitular(){
        return titular;
    }
+   
+	@Override
+	public String toString() {
+		return "Numero: "+this.getNumero()+", Agencia: "+this.getAgencia();
+	}
 }

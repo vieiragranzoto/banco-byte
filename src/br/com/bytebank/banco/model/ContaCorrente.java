@@ -57,5 +57,10 @@ public class ContaCorrente implements Conta {
 	public Cliente getTitular() {
 		return this.conta.getTitular();
 	}
+	
+	@Override
+	public String toString() {
+		return "Conta tipo Corrente, "+this.conta.toString();
+	}
 
 }

@@ -46,5 +46,9 @@ public class ContaPoupanca implements Conta {
 		return this.conta.getTitular();
 	}
 	
+	@Override
+	public String toString() {
+		return "Conta tipo Poupanca, "+this.conta.toString();
+	}
 	
 }
