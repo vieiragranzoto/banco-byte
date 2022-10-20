@@ -1,6 +1,6 @@
 package br.com.bytebank.banco.model;
 
-abstract interface Conta {
+public abstract interface Conta {
 
     double consultarSaldo();
     void deposita(double saldo);
