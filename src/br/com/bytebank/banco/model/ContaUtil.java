@@ -9,8 +9,8 @@ package br.com.bytebank.banco.model;
  */
 public class ContaUtil {
     private double saldo;
-    private int agencia;
-    private int numero;
+    private String agencia;
+    private String numero;
     private Cliente titular;
 
     public double consultarSaldo() {
@@ -36,19 +36,19 @@ public class ContaUtil {
 	    conta.deposita(valor);
     }
 
-    public void setAgencia(int agencia) {
+    public void setAgencia(String agencia) {
         this.agencia = agencia;
     }
     
-    public int getAgencia() {
+    public String getAgencia() {
         return agencia;
     }
     
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
     
@@ -74,6 +74,6 @@ public class ContaUtil {
    
 	@Override
 	public String toString() {
-		return "Numero: "+this.getNumero()+", Agencia: "+this.getAgencia();
+		return "Agencia: "+this.getAgencia()+", Numero: "+this.getNumero();
 	}
 }

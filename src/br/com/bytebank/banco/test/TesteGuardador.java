@@ -12,37 +12,27 @@ public class TesteGuardador {
 		Guardador contas = new Guardador();
 		
 		Cliente c1 = new Cliente("43679864512", "Joaquina Silvana", 43, "Rua Engenheiro Alvaro");
-		ContaCorrente cc1 = new ContaCorrente(526.5, 10, 21540, c1);
+		ContaCorrente cc1 = new ContaCorrente(526.5, "10", "21540", c1);
 		
 		contas.adiciona(cc1);
 		
 		Cliente c2 = new Cliente("93219864512", "Ana Julia", 32, "Rua Carmine monetti");
-		ContaPoupanca cp1 = new ContaPoupanca(856.5, 11, 78540, c2);
+		ContaPoupanca cp1 = new ContaPoupanca(856.5, "11", "78540", c2);
 		
 		contas.adiciona(cp1);
 		
 		Cliente c3 = new Cliente("86919864512", "Diana Gimenes", 32, "Rua Jabuti");
-		ContaCorrente cc2 = new ContaCorrente(786.5, 10, 76540, c3);
+		ContaCorrente cc2 = new ContaCorrente(786.5, "10", "76540", c3);
 		
 		contas.adiciona(cc2);
 		
 		Cliente c4 = new Cliente("64378645182", "Vitoria Silva", 32, "Rua Caminhao");
-		ContaPoupanca cp2 = new ContaPoupanca(5166.5, 11, 658540, c4);
+		ContaPoupanca cp2 = new ContaPoupanca(5166.5, "11", "658540", c4);
 		
 		contas.adiciona(cp2);
-//		contas.lista();
 		
-//		Conta ref=contas.getReferencias(0);
-//		System.out.println(ref.getTitular().getNome());
-		
-		Cliente c5 = new Cliente("64378645182", "Vitoria Silva", 32, "Rua Caminhao");
-		ContaPoupanca cp3 = new ContaPoupanca(5166.5, 11, 658540, c4);
-		
-//		contas.adiciona(cp3);
-		
-		Conta ref = (Conta)contas.localiza(cp3);
-		
-		System.out.println(ref);
+		Conta ref1=contas.localiza(2);
+		System.out.println(ref1.getTitular().getNome());
 		
 
 	}

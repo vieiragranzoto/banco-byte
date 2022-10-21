@@ -13,7 +13,7 @@ public class ContaCorrente implements Conta {
 	 * @param numero
 	 * @param titular
 	 */
-    public ContaCorrente(double saldo, int agencia, int numero, Cliente titular) {
+    public ContaCorrente(double saldo, String agencia, String numero, Cliente titular) {
     	this.contaUtil = new ContaUtil();
     	this.contaUtil.deposita(saldo);
         this.contaUtil.setAgencia(agencia);
@@ -44,12 +44,12 @@ public class ContaCorrente implements Conta {
 	}
 
 	@Override
-	public int getAgencia() {
+	public String getAgencia() {
 		return this.contaUtil.getAgencia();
 	}
 
 	@Override
-	public int getNumero() {
+	public String getNumero() {
 		return this.contaUtil.getNumero();
 	}
 

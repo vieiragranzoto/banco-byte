@@ -24,17 +24,16 @@ public class Guardador {
 	public int getQuantidadeElemento() {
 		return this.posicaolivre;
 	}
-	
-	public Object localiza(int numero) {
+	public Conta localiza(int posicao) {
 		for(int i = 0;i < this.posicaolivre;i++) {
-			if(this.referencias[i].getNumero()==numero) {
+			if(i==posicao) {
 				return this.referencias[i];
 			}
 		}
-		throw new RuntimeException("Numero da conta nao encontrado!"); 
+		throw new RuntimeException("Posição nao encontrada no array!"); 
 	}
 	
-	public Object localiza(String cpf) {
+	public Conta localiza(String cpf) {
 		for(int i = 0;i < this.posicaolivre;i++) {
 			if(this.referencias[i].getTitular().getCpf()==cpf) {
 				return this.referencias[i];
@@ -43,7 +42,7 @@ public class Guardador {
 		throw new RuntimeException("Conta com CPF:"+cpf+" nao encontrado!"); 
 	}
 	
-	public Object localiza(Object objeto) {
+	public Conta localiza(Object objeto) {
 		for(int i = 0;i < this.posicaolivre;i++) {
 			if(this.referencias[i]==objeto) {
 				return this.referencias[i];

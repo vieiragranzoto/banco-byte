@@ -6,8 +6,8 @@ public abstract interface Conta {
     void deposita(double saldo);
     void saca(double saldo);
     void transfere(double valor, Conta conta);
-    int getAgencia();
-    int getNumero();
+    String getAgencia();
+    String getNumero();
     Cliente getTitular();
     boolean equals(Object conta);
     public String toString();
