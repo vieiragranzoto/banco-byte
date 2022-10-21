@@ -9,4 +9,6 @@ public abstract interface Conta {
     int getAgencia();
     int getNumero();
     Cliente getTitular();
+    boolean equals(Object conta);
+    public String toString();
 }

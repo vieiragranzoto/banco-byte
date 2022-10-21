@@ -4,7 +4,7 @@ import br.com.bytebank.banco.model.Cliente;
 import br.com.bytebank.banco.model.ContaCorrente;
 import br.com.bytebank.banco.model.ContaPoupanca;
 
-public class TestetoString {
+public class TesteToString {
 
 	public static void main(String[] args) {
 		Cliente cliente1 = new Cliente("45888276706","Priscilla Vieira", 

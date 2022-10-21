@@ -2,7 +2,7 @@ package br.com.bytebank.banco.model;
 
 public class ContaCorrente implements Conta {
 
-	private ContaUtil conta;
+	private ContaUtil contaUtil;
 
 	/**
 	 * Construtor para inicializar o objeto ContaUtil a partir dos atributos:
@@ -14,53 +14,58 @@ public class ContaCorrente implements Conta {
 	 * @param titular
 	 */
     public ContaCorrente(double saldo, int agencia, int numero, Cliente titular) {
-    	this.conta = new ContaUtil();
-    	this.conta.deposita(saldo);
-        this.conta.setAgencia(agencia);
-        this.conta.setNumero(numero);
-        this.conta.setTitular(titular);
+    	this.contaUtil = new ContaUtil();
+    	this.contaUtil.deposita(saldo);
+        this.contaUtil.setAgencia(agencia);
+        this.contaUtil.setNumero(numero);
+        this.contaUtil.setTitular(titular);
     }
 
 	
 	@Override
 	public double consultarSaldo() {
-		return this.conta.consultarSaldo();
+		return this.contaUtil.consultarSaldo();
 	}
 
 	@Override
 	public void deposita(double saldo) {
-		this.conta.deposita(saldo);
+		this.contaUtil.deposita(saldo);
 	}
 
 	@Override
 	public void saca(double saldo) {
-		this.conta.saca(saldo);
+		this.contaUtil.saca(saldo);
 	}
 
 	@Override
 	public void transfere(double valor, Conta conta) {
 		valor = valor + (valor*0.01);
-		this.conta.transfere(valor, conta);
+		this.contaUtil.transfere(valor, conta);
 	}
 
 	@Override
 	public int getAgencia() {
-		return this.conta.getAgencia();
+		return this.contaUtil.getAgencia();
 	}
 
 	@Override
 	public int getNumero() {
-		return this.conta.getNumero();
+		return this.contaUtil.getNumero();
 	}
 
 	@Override
 	public Cliente getTitular() {
-		return this.conta.getTitular();
+		return this.contaUtil.getTitular();
+	}
+	
+	@Override
+	public boolean equals(Object conta) {
+		return this.contaUtil.equals(conta);
 	}
 	
 	@Override
 	public String toString() {
-		return "Conta tipo Corrente, "+this.conta.toString();
+		return "CC, "+this.contaUtil.toString();
 	}
 
 }

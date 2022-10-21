@@ -60,6 +60,18 @@ public class ContaUtil {
        return titular;
    }
    
+   @Override
+   public boolean equals(Object obj) {
+	   Conta conta = (Conta)obj;
+		if (this.agencia != conta.getAgencia()) {
+			return false;
+		}
+		if (this.numero != conta.getNumero()) {
+			return false;
+		}
+		return true;
+	}
+   
 	@Override
 	public String toString() {
 		return "Numero: "+this.getNumero()+", Agencia: "+this.getAgencia();

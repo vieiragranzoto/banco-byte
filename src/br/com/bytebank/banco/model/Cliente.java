@@ -44,4 +44,9 @@ public class Cliente extends Object {
         this.endereco = endereco;
     }
     
+    @Override
+    	public String toString() {
+    		return "Cliente: "+this.getNome();
+    	}
+    
 }
