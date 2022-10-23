@@ -55,5 +55,10 @@ public class ContaPoupanca implements Conta {
 	public String toString() {
 		return "CP, "+this.contaUtil.toString();
 	}
+
+	@Override
+	public int compareTo(Conta outra) {
+		return this.contaUtil.compareTo(outra);
+	}
 	
 }

@@ -76,4 +76,11 @@ public class ContaUtil {
 	public String toString() {
 		return "Agencia: "+this.getAgencia()+", Numero: "+this.getNumero();
 	}
+	
+	public int compareTo(Conta outra) {
+		int n1 = Integer.parseInt(this.numero);
+		int n2 = Integer.parseInt(outra.getNumero());
+		
+		return Integer.compare(n1, n2);
+	}
 }

@@ -68,4 +68,9 @@ public class ContaCorrente implements Conta {
 		return "CC, "+this.contaUtil.toString();
 	}
 
+	@Override
+	public int compareTo(Conta outra) {
+		return this.contaUtil.compareTo(outra);
+	}
+
 }
