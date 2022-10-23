@@ -10,7 +10,7 @@ import br.com.bytebank.banco.model.Conta;
 import br.com.bytebank.banco.model.ContaCorrente;
 import br.com.bytebank.banco.model.ContaPoupanca;
 
-public class TesteComparator {
+public class TesteOrdenacao {
 	
 	public static void main(String[] args) {
 		
@@ -76,7 +76,7 @@ class SaldoDaContaComparator implements Comparator<Conta>{
 
 	@Override
 	public int compare(Conta c1, Conta c2) {
-		return Double.compare(c1.consultarSaldo(), c2.consultarSaldo());
+		return Double.compare(c1.consultaSaldo(), c2.consultaSaldo());
 	}
 	
 }

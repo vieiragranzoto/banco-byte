@@ -13,7 +13,7 @@ public class ContaUtil {
     private String numero;
     private Cliente titular;
 
-    public double consultarSaldo() {
+    public double consultaSaldo() {
         return saldo;
     }
 

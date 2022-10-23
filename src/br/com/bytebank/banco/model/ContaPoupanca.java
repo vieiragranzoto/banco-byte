@@ -12,8 +12,8 @@ public class ContaPoupanca implements Conta {
     }
 	
 	@Override
-	public double consultarSaldo() {
-		return this.contaUtil.consultarSaldo();
+	public double consultaSaldo() {
+		return this.contaUtil.consultaSaldo();
 	}
 
 	@Override

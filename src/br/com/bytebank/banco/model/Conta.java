@@ -2,7 +2,7 @@ package br.com.bytebank.banco.model;
 
 public abstract interface Conta extends Comparable<Conta> {
 
-    double consultarSaldo();
+    double consultaSaldo();
     void deposita(double saldo);
     void saca(double saldo);
     void transfere(double valor, Conta conta);

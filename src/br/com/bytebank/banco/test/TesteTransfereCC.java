@@ -19,10 +19,10 @@ public class TesteTransfereCC {
 		
 		System.out.println("--------------------------------");
 		System.out.println("Cliente: "+cliente1.getNome());
-		System.out.println("Saldo conta poupanca: R$ "+cp.consultarSaldo());
+		System.out.println("Saldo conta poupanca: R$ "+cp.consultaSaldo());
 		System.out.println("--------------------------------");
 		System.out.println("Cliente: "+cliente2.getNome());
-		System.out.println("Saldo conta corrente: R$ "+cc.consultarSaldo());
+		System.out.println("Saldo conta corrente: R$ "+cc.consultaSaldo());
 		System.out.println("--------------------------------");
 		
 		
