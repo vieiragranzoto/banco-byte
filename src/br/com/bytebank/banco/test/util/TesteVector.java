@@ -1,17 +1,16 @@
 package br.com.bytebank.banco.test.util;
 
-import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 import br.com.bytebank.banco.model.Cliente;
 import br.com.bytebank.banco.model.Conta;
 import br.com.bytebank.banco.model.ContaCorrente;
 import br.com.bytebank.banco.model.ContaPoupanca;
 
-public class TesteLinkedList {
+public class TesteVector {
 	public static void main(String[] args) {
-		
-		List<Conta> lista = new LinkedList<Conta>();
+		List<Conta> lista = new Vector<Conta>();
 		
 		Cliente cliente1 = new Cliente("43679864512", "Joaquina Silvana", 43, "Rua Engenheiro Alvaro");
 		ContaCorrente cc1 = new ContaCorrente(526.5, "5460", "21540", cliente1);

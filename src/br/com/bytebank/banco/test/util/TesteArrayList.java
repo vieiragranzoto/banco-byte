@@ -1,6 +1,7 @@
 package br.com.bytebank.banco.test.util;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import br.com.bytebank.banco.model.Cliente;
 import br.com.bytebank.banco.model.Conta;
@@ -11,7 +12,7 @@ public class TesteArrayList {
 	
 	public static void main(String[] args) {
 		
-		ArrayList<Conta> lista = new ArrayList<Conta>();
+		List<Conta> lista = new ArrayList<Conta>();
 		
 		Cliente c1 = new Cliente("43679864512", "Joaquina Silvana", 43, "Rua Engenheiro Alvaro");
 		ContaCorrente cc1 = new ContaCorrente(526.5, "5460", "21540", c1);
