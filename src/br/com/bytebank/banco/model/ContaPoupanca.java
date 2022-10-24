@@ -53,7 +53,7 @@ public class ContaPoupanca implements Conta {
 	
 	@Override
 	public String toString() {
-		return "CP, "+this.contaUtil.toString();
+		return "| CP"+this.contaUtil.toString();
 	}
 
 	@Override

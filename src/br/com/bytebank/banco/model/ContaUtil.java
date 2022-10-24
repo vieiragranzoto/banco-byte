@@ -74,7 +74,7 @@ public class ContaUtil {
    
 	@Override
 	public String toString() {
-		return "Agencia: "+this.getAgencia()+", Numero: "+this.getNumero();
+		return " | Agencia: "+this.getAgencia()+" | Numero: "+this.getNumero()+" |";
 	}
 	
 	public int compareTo(Conta outra) {

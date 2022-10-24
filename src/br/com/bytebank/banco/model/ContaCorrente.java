@@ -65,7 +65,7 @@ public class ContaCorrente implements Conta {
 	
 	@Override
 	public String toString() {
-		return "CC, "+this.contaUtil.toString();
+		return "| CC"+this.contaUtil.toString();
 	}
 
 	@Override
