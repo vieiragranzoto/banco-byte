@@ -1,6 +1,9 @@
 package br.com.bytebank.banco.model;
 
 public class ContaPoupanca implements Conta {
+
+	private static final long serialVersionUID = 1L;
+	
 	private ContaUtil contaUtil;
 
     public ContaPoupanca(double saldo, String agencia, String numero, Cliente titular) {

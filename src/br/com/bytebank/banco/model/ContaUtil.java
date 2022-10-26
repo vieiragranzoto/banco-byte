@@ -1,5 +1,7 @@
 package br.com.bytebank.banco.model;
 
+import java.io.Serializable;
+
 /**
  * Classe para moldura de atributos e metodos.
  * 
@@ -7,8 +9,12 @@ package br.com.bytebank.banco.model;
  * @version 0.1
  *
  */
-public class ContaUtil {
-    private double saldo;
+public class ContaUtil implements Serializable {
+
+
+	private static final long serialVersionUID = 1L;
+	
+	private double saldo;
     private String agencia;
     private String numero;
     private Cliente titular;

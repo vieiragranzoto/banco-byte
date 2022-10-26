@@ -1,7 +1,10 @@
 package br.com.bytebank.banco.model;
 
 public class ContaCorrente implements Conta {
+	
 
+	private static final long serialVersionUID = 1L;
+	
 	private ContaUtil contaUtil;
 
 	/**

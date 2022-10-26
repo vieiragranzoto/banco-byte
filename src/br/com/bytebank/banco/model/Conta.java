@@ -1,6 +1,8 @@
 package br.com.bytebank.banco.model;
 
-public abstract interface Conta extends Comparable<Conta> {
+import java.io.Serializable;
+
+public abstract interface Conta extends Comparable<Conta>,Serializable {
 
     double consultaSaldo();
     void deposita(double saldo);
