@@ -18,7 +18,7 @@ public class TesteEscritaArquivo {
 		ArrayList<Conta>lista=ldc.getLista();
 		
 		FileOutputStream fos = new FileOutputStream("contas.txt");
-		OutputStreamWriter osw = new OutputStreamWriter(fos);
+		OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
 		BufferedWriter bw = new BufferedWriter(osw);
 		
 		lista.sort((Conta c1, Conta c2) -> {

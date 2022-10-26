@@ -13,11 +13,11 @@ public class TesteLeituraTeclado {
 	public static void main(String[] args) throws IOException {
 		
 		InputStream is = System.in;
-		InputStreamReader isr = new InputStreamReader(is);
+		InputStreamReader isr = new InputStreamReader(is, "UTF-8");
 		BufferedReader br = new BufferedReader(isr);
 		
 		OutputStream fos = System.out;
-		OutputStreamWriter osw = new OutputStreamWriter(fos);
+		OutputStreamWriter osw = new OutputStreamWriter(fos,"UTF-8");
 		BufferedWriter bw = new BufferedWriter(osw);
 		
 		String linha = br.readLine();

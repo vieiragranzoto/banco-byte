@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class TesteScanner {
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner scanner = new Scanner(new File("contas.csv"));
+		Scanner scanner = new Scanner(new File("contas.csv"), "UTF-8");
 
 		while(scanner.hasNextLine()) {
 			String linha = scanner.nextLine();

@@ -13,11 +13,11 @@ public class TesteCopiarArquivo {
 	public static void main(String[] args) throws IOException {
 		
 		FileInputStream fis = new FileInputStream("contas.txt");
-		InputStreamReader isr = new InputStreamReader(fis);
+		InputStreamReader isr = new InputStreamReader(fis,"UTF-8");
 		BufferedReader br = new BufferedReader(isr);
 		
 		FileOutputStream fos = new FileOutputStream("contas2.txt");
-		OutputStreamWriter osw = new OutputStreamWriter(fos);
+		OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
 		BufferedWriter bw = new BufferedWriter(osw);
 		
 		String linha = br.readLine();
@@ -32,7 +32,7 @@ public class TesteCopiarArquivo {
 		br.close();
 		
 		FileInputStream fis2 = new FileInputStream("contas2.txt");
-		InputStreamReader isr2 = new InputStreamReader(fis2);
+		InputStreamReader isr2 = new InputStreamReader(fis2, "UTF-8");
 		BufferedReader br2 = new BufferedReader(isr2);
 		
 		String linha2 = br2.readLine();

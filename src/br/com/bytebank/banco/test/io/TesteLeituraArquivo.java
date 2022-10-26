@@ -10,7 +10,7 @@ public class TesteLeituraArquivo {
 	public static void main(String[] args) throws IOException {
 		
 		FileInputStream fis = new FileInputStream("contas.txt");
-		InputStreamReader isr = new InputStreamReader(fis);
+		InputStreamReader isr = new InputStreamReader(fis,"UTF-8");
 		BufferedReader br = new BufferedReader(isr);
 		
 		String linha = br.readLine();
