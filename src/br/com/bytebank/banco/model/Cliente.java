@@ -1,6 +1,7 @@
 package br.com.bytebank.banco.model;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 /**
  * Classe que representa um cliente no Bytebank.
@@ -15,10 +16,10 @@ public class Cliente extends Object implements Serializable {
 	
 	private String cpf;
     private String nome;
-    private int idade;
+    private LocalDate idade;
     private String endereco;
 
-    public Cliente(String cpf, String nome, int idade, String endereco) {
+    public Cliente(String cpf, String nome, LocalDate idade, String endereco) {
         this.cpf = cpf;
         this.nome = nome;
         this.idade = idade;
@@ -37,8 +38,8 @@ public class Cliente extends Object implements Serializable {
         this.nome = nome;
     }
 
-    public int getIdade() {
-        return idade;
+	public int getIdade() {
+        return this.idade.compareTo(LocalDate.now());
     }
 
     public String getEndereco() {
