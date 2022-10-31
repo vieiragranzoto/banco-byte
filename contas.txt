@@ -4,15 +4,15 @@
 
 Titular: Giovana Xavez
 
-Saldo:744.2
+Saldo:3736.20
 
 -----------------------------------------
 
-| CP | Agencia: 0123 | Numero: 5670 |
+| CP | Agencia: 0123 | Numero: 56702 |
 
 Titular: Jaime Soares
 
-Saldo:234.5
+Saldo:2234.50
 
 -----------------------------------------
 
@@ -20,14 +20,14 @@ Saldo:234.5
 
 Titular: Joaquina Silvana
 
-Saldo:526.5
+Saldo:1526.50
 
 -----------------------------------------
 
-| CC | Agencia: 2345 | Numero: 67842 |
+| CC | Agencia: 3259 | Numero: 45678 |
 
 Titular: Monica Silva
 
-Saldo:744.2
+Saldo:744.20
 
 -----------------------------------------
