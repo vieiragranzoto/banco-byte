@@ -6,7 +6,7 @@ ensinado na formação Java e Orientação a Objetos da Alura.
 ## Table of Contents
 
 - [Projeto](#projeto)
-  + [Packages](#packages)
+- [Packages](#packages)
 - [Model](#model)
   + [Classes & Interfaces](#classes--interfaces)
 - [Test](#test)
@@ -18,11 +18,27 @@ ensinado na formação Java e Orientação a Objetos da Alura.
 
 O projeto utiliza composição e interface ao invés de herança,
 
-O diretório src/main contém funcionalidades do sistema, e testes de aprendizado.
+Este diretório contém funcionalidades do sistema, e testes de aprendizado:
 
-O diretório src/test contém testes utilizando JUnit.
+```src/main```
+
+Este diretório contém testes utilizando JUnit:
+
+```src/test```
+
+Este diretório contém documentação do sistema utilizando Javadoc:
+
+```doc```
+
+Este diretório contém jar's criados do projeto.
+
+```libs```
+
+Os arquivos bin e txt são criados nos testes de aprendizado.
+
+O arquivo csv é utilizado no teste de aprendizado TesteScanner.
   
-### Packages
+## Packages
   
 Pacotes criados para o projeto seguem a nomenclatura:
 URL ao contrario do site fictício e nome do projeto
@@ -51,6 +67,10 @@ Classe que é utilizada na criação de contas Corrente e Poupança:
 
 ```Cliente.java```
 
+Classe para ser usada em testes de aprendizado contendo uma coleção de contas:
+
+```CollectionDeContas.java
+
 Interface deve ser implementada por diferentes tipos de Conta
 criados no banco:
 
@@ -71,23 +91,35 @@ tipos de Conta no banco:
 
 ```ContaUtil.java```
 
+Classe de array simples com funcionalidades para guardar contas:
+
+```Guardador.java```
+
+Enum com funcionalidades para serem utilizadas em JurosService:
+
+```Situacao.java```
+
 Classe de exceção unchecked utilizada para valores incorretos:
 
 ```ValorIncorretoException.java```
 
+Classe com serviço para calcular juros de Contas:
+
+```JurosService.java```
+
 ## Test
 
-O pacote teste é onde classes de teste devem ser criados.
+O diretório src/test é onde classes de teste devem ser criados utilizando JUnit..
 
 ### transfere
 
-Classe criada no diretório src/test para testar metodo transfere da classe ContaCorrente utilizando JUnit:
+Classe criada para testar metodo transfere da classe ContaCorrente:
 
 ```ContaCorrenteTest.java```
 
 ### calculaJuros
 
-Classe criada no diretório src/test para testar calculaJuros da classe JurosService utilizando JUnit:
+Classe criada para testar calculaJuros da classe JurosService:
 
 ```JurosServiceTest.java```
 
