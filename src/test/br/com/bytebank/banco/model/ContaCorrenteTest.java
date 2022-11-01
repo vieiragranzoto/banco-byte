@@ -12,6 +12,7 @@ class ContaCorrenteTest {
 
 	private ContaCorrente cc;
 	private ContaCorrente cc2;
+
 	@BeforeEach
 	public void inicializar() {
 		this.cc = new ContaCorrente(new BigDecimal("1000.00"), "12345", "1233458",
