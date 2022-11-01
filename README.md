@@ -69,7 +69,7 @@ Classe que é utilizada na criação de contas Corrente e Poupança:
 
 Classe para ser usada em testes de aprendizado contendo uma coleção de contas:
 
-```CollectionDeContas.java
+```CollectionDeContas.java```
 
 Interface deve ser implementada por diferentes tipos de Conta
 criados no banco:
