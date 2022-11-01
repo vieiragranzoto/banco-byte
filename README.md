@@ -10,12 +10,17 @@ ensinado na formação Java e Orientação a Objetos da Alura.
 - [Model](#model)
   + [Classes & Interfaces](#classes--interfaces)
 - [Test](#test)
-  + [Criar Conta](#criar-conta)
+  + [transfere](#transfere)
+  + [calculaJuros](#calculajuros)
 
   
 ## Projeto
 
 O projeto utiliza composição e interface ao invés de herança,
+
+O diretório src/main contém funcionalidades do sistema, e testes de aprendizado.
+
+O diretório src/test contém testes utilizando JUnit.
   
 ### Packages
   
@@ -26,7 +31,11 @@ Pacote contendo os modelos do projeto:
 
 ```br.com.bytebank.banco.model```
 
-Pacote contendo os testes do projeto:
+Pacote contendo os services do projeto:
+
+```br.com.bytebank.banco.services```
+
+Pacote contendo os testes de aprendizado do projeto:
 
 ```br.com.bytebank.banco.test```
 
@@ -70,11 +79,17 @@ Classe de exceção unchecked utilizada para valores incorretos:
 
 O pacote teste é onde classes de teste devem ser criados.
 
-### Criar Conta
+### transfere
 
-Classe criada para testar metodo transfere da classe ContaCorrente:
+Classe criada no diretório src/test para testar metodo transfere da classe ContaCorrente utilizando JUnit:
 
-```TesteTransfereCC.java```
+```ContaCorrenteTest.java```
+
+### calculaJuros
+
+Classe criada no diretório src/test para testar calculaJuros da classe JurosService utilizando JUnit:
+
+```JurosServiceTest.java```
 
 
   
